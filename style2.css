@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green: #ecfaec;
+  --dark-green: orange;
+  --white: #ffffff;
+  --black: #202020;
+}
+
+body {
+  min-height: 50vh;
+  display: grid;
+  place-items: center;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--green);
+  background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
+  color: var(--black);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+}
+
+.logo{
+    height: 50px;
+    width: 45px;
+    align-content: center;
+    margin-left: 290px;
+}
+header {
+  padding: 1em 1em;
+  display: grid;
+  grid-template-columns: 0px 1fr;
+  align-items: center;
+}
+header h1 {
+  color:black;
+  right: inherit;
+  font-size: 40px;
+  text-align: center;
+}
+header ul {
+  display: flex;
+  margin-top: 30px;
+}
+header li {
+  margin-left: 110px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+section {
+  width: 100%;
+  padding: 0.5em;
+}
+
+section h4 {
+  opacity: 0.8;
+}
+
+li.active {
+  color: orange;
+  border-bottom: 1px solid orange;
+}
+
+.card {
+  background-color: var(--white);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card-info {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  padding: 1em 2em;
+}
+.card-info h1 {
+  font-size: 3rem;
+  color: orange;
+  align-self: baseline;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  align-items: baseline;
+}
+.card-info p {
+  font-size: 3rem;
+  font-weight: bold;
+  align-self: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.card-info a {
+  display: grid;
+  grid-template-columns: max-content 20px;
+  align-items: center;
+  column-gap: 7px;
+  color: orange;
+  font-size: 0.85rem;
+  font-weight: bold;
+  align-self: center;
+  transform: translateX(0px);
+  transition: transform 0.3s 0.1s ease-out;
+}
+.card-tab a {
+    display: grid;
+    grid-template-columns: max-content 20px;
+    align-items: center;
+    column-gap: 7px;
+    color: orange;
+    font-size: 0.85rem;
+    font-weight: bold;
+    align-self: center;
+    justify-self: flex-end;
+    transform: translateX(0px);
+    transition: transform 0.3s 0.1s ease-out;
+  }
+.card-info a:hover {
+  transform: translateX(5px);
+}
+.card-info a:hover svg {
+  transform: translateX(5px);
+}
+.card-info svg {
+  width: 20px;
+  height: 10px;
+  transform: translateX(0px);
+  transition: transform 0.3s ease-out;
+}
+.card-info svg line {
+  stroke: orange;
+}
+
+.card-photo {
+    width: 750px;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    padding: 10px;
+}
+.card-photo img {
+  display: block;
+  max-width: 100%;
+  aspect-ratio: 1/1;
+}
+footer{
+    color:black;
+    right: inherit;
+    margin-top: 15px;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
